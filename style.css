@@ -11,6 +11,7 @@ body{
     line-height: 1.6;
 }
 
+/* better to use classes for syling and in general avoid ids... Ids are more of a concrete element styling and classes are for reusable style groups  */
 #showcase {
     background-image: url('image.jpg');
     background-size: cover;
@@ -23,25 +24,6 @@ body{
     text-align: center;
     padding: 0 20px;
 }
-
-/* #main {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -5;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-} */
-
 
 #showcase h1{
     font-size: 50px;
