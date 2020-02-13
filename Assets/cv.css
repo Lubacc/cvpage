@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-position: none;
+    font-family: "montserrat";
+}
+
+body {
+    background: #34495e;
+    font-size: 14px;
+    line-height: 22px;
+    color: #f2f2f2;
+}
+
+.resume-profile img{
+    width: 20vh;
+}
+
+.resume {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+.resume .resume-left {
+    
+}
