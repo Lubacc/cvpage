@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: linear-gradient(var(--primary-color),var(--primary-color)), url('image.jpg');
+    /* background-image: linear-gradient(var(--primary-color),var(--primary-color)), url('image.jpg'); */
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -28,7 +28,7 @@ body {
     font-weight: 500;
     font-size: 16px;
   }
-
+  
 .resume {
     width: 800px;
     height: auto;
@@ -38,7 +38,7 @@ body {
 
 .resume .resume-left {
     width: 280px;
-    background: rgba(0,0,0,0.1);
+    background: #fff;
 }
 
 .resume .resume-left .resume-profile {
@@ -60,16 +60,16 @@ body {
 }
 
 .resume .resume-left .bold {
-    color: #f2f2f2;
+    color: #0bb5f4;
 }
 
 .resume .resume-left .regular {
-    color: #b1eaff;
+    color: black;
 }
 
 .resume .resume-item {
     padding: 25px 0;
-    border-bottom: 2px solid #b1eaff;
+    border-bottom: 2px solid black;
 }
 
 .resume .resume-left .resume-item:last-child {
@@ -106,16 +106,16 @@ body {
 }
 
 .resume .resume-left ul li .data {
-    color: #b1eaff;
+    color: black;
 }
 
 .resume .resume-left .resume-skills ul li {
-    color: #b1eaff;
+    color: black;
 }
 
 .resume .resume-right {
     width: 520px;
-    background: rgba(255, 255, 255, 0.2);
+    background:#fff;
     padding: 25px;
     color: black;
 }
@@ -149,4 +149,13 @@ body {
     margin-bottom: 0;
 }
 
-    
+@media only screen and (max-width: 760px) {
+
+    .resume {
+        flex-direction: column;
+    }
+    .resume-left {
+        width: 100%;
+    }
+  }
+  
