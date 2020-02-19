@@ -27,10 +27,6 @@ body {
     font-weight: 500;
     font-size: 16px;
   }
-
-  .cv-wrap {
-    
-  }
   
 .resume {
     width: 800px;
@@ -38,6 +34,7 @@ body {
     display: flex;
     margin: 50px auto;
     background: #fff;
+    padding: 40px;
 }
 
 .resume .resume-left {
@@ -120,6 +117,7 @@ body {
     width: 60%;
     padding: 10px;
     color: black;
+    text-align: center;
 }
 
 .resume .resume-right .bold {
@@ -135,6 +133,7 @@ body {
 
 .resume .resume-right ul li{
     position: relative;
+    list-style: none;
 }
 
 .resume .resume-right ul li .date {
