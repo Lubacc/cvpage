@@ -5,6 +5,11 @@
 }
 
 body{
+    background-image: linear-gradient(var(--primary-color),var(--primary-color)), url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
     margin: 0;
     padding: 0;
     font-family: 'Tomorrow', sans-serif;
@@ -12,10 +17,6 @@ body{
 }
 
 .contact-section{
-    background-image: linear-gradient(var(--primary-color),var(--primary-color)), url('image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +40,7 @@ body{
 }
 
 .contact-form {
-    max-width: 600px;
+    width: 600px;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
@@ -81,5 +82,7 @@ textarea.contact-form-text {
 .contact-form-btn:hover {
     background:rgba(0, 0, 0);
 }
+
+
 
 

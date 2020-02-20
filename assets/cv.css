@@ -9,13 +9,12 @@
 }
 
 body {
-    /* background-image: linear-gradient(var(--primary-color),var(--primary-color)), url('image.jpg'); */
+    background-image: linear-gradient(var(--primary-color),var(--primary-color)), url('image.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
     font-size: 14px;
     line-height: 22px;
-    color: #f2f2f2;
 }
 
 .bold {
@@ -34,11 +33,12 @@ body {
     height: auto;
     display: flex;
     margin: 50px auto;
+    background: #fff;
+    padding: 40px;
 }
 
 .resume .resume-left {
-    width: 280px;
-    background: #fff;
+    width: 40%;
 }
 
 .resume .resume-left .resume-profile {
@@ -114,10 +114,10 @@ body {
 }
 
 .resume .resume-right {
-    width: 520px;
-    background:#fff;
-    padding: 25px;
+    width: 60%;
+    padding: 10px;
     color: black;
+    text-align: center;
 }
 
 .resume .resume-right .bold {
@@ -133,6 +133,7 @@ body {
 
 .resume .resume-right ul li{
     position: relative;
+    list-style: none;
 }
 
 .resume .resume-right ul li .date {
@@ -149,12 +150,25 @@ body {
     margin-bottom: 0;
 }
 
-@media only screen and (max-width: 760px) {
+.resume .resume-right .resume-item:last-child {
+    border-bottom: 0px;
+}
+
+@media only screen and (max-width: 400px) {
 
     .resume {
         flex-direction: column;
     }
-    .resume-left {
+    
+    .resume .resume-left {
+        width: 100%;
+    }
+    .resume .resume-left .resume-profile {
+        width: 30%;
+    }
+    
+    
+    .resume .resume-right {
         width: 100%;
     }
   }
