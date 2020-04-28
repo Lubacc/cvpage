@@ -27,18 +27,15 @@ body {
     font-weight: 500;
     font-size: 16px;
   }
-  
+
 .resume {
     width: 800px;
     height: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0.5em;
     margin: 50px auto;
     background: #fff;
-    padding: 40px;
-}
-
-.resume .resume-left {
-    width: 40%;
 }
 
 .resume .resume-left .resume-profile {
@@ -114,10 +111,8 @@ body {
 }
 
 .resume .resume-right {
-    width: 60%;
     padding: 10px;
     color: black;
-    text-align: center;
 }
 
 .resume .resume-right .bold {
@@ -133,7 +128,6 @@ body {
 
 .resume .resume-right ul li{
     position: relative;
-    list-style: none;
 }
 
 .resume .resume-right ul li .date {
@@ -154,10 +148,10 @@ body {
     border-bottom: 0px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) {
 
     .resume {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
     
     .resume .resume-left {
